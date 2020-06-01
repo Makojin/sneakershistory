@@ -15,9 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::group(['prefix' => 'user','middleware'=>'auth'],function() {
-    Route::get('profile/create','user\ProfileController@add');
-    Route::get('profile/edit','user\ProfileController@edit');
+    Route::post('mypage', 'user`\ProfileController@add');
+    Route::get('profile/create','user\ProfileController@create');
+    Route::post('profile/edit','user\ProfileController@edit');
+    Route::post('history/create','user\HistoryController@creater');
+    Route::post('history/index','user\HistoryController@index');
+    Route::post('history/detaile','user\HistoryController@detaile');
+    
+    
+    
+    
 });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('history/search','HomeController@search');
+Route::get('history/detaile','HomeController@detaile');
+
