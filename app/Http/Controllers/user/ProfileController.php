@@ -14,7 +14,7 @@ class ProfileController extends Controller
     }
     public function create()
     {
-        return redirect('user.profile.create');
+        return view('user.profile.create');
     }
     public function edit()
     {
