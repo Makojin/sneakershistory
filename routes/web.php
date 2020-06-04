@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'user','middleware'=>'auth'],function() {
     Route::get('mypage', 'user`\ProfileController@add');
     Route::get('profile/create','user\ProfileController@create');
-    Route::post('profile/edit','user\ProfileController@edit');
+    Route::get('profile/edit','user\ProfileController@edit');
     Route::get('history/create','user\HistoryController@creater');
     Route::post('history/index','user\HistoryController@index');
     Route::post('history/detaile','user\HistoryController@detaile');
@@ -31,5 +31,5 @@ Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
 Route::get('history/search','HomeController@search');
 Route::get('history/detaile','HomeController@detaile');
-
+Route::get('about','HomeController@about');
 

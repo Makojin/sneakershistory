@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class HistoryController extends Controller
 {
@@ -14,7 +15,7 @@ class HistoryController extends Controller
     
     public function create()
     {//投稿画面
-        return view('user/history/create');
+        return view('/history/create');
     }
     
     public function index()
