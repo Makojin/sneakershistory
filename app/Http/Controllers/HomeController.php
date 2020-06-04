@@ -28,18 +28,18 @@ class HomeController extends Controller
     
     public function search()
     {//検索結果一覧画面
-        return view('history/search');
+        return view('search');
     }
     
      public function detaile()
     {//投稿詳細画面
-        return view('history/detaile');
+        return view('detaile');
     
     }
     
     public function about()
     {
-        return view('/about');
+        return view('about');
     }
 
 }
