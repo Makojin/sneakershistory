@@ -22,7 +22,7 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
+    {//トップページ
         return view('/home');
     }
     
@@ -38,8 +38,14 @@ class HomeController extends Controller
     }
     
     public function about()
-    {
+    {//スニヒスについて
         return view('about');
     }
+    
+    public function contact()
+    {//問い合わせ画面
+        return view('contact');
+    }
+    
 
 }

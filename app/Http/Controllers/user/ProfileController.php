@@ -10,7 +10,7 @@ class ProfileController extends Controller
     //
     public function add()
     {
-        return view('mypage');
+        return view('user.profile.mypage');
     }
     public function create()
     {
