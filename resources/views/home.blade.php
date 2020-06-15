@@ -1,4 +1,4 @@
 @extends('layouts.template')
 
-@section('title','スニーカーヒストリー')
+@section('title','スニーカーズヒストリー')
 
