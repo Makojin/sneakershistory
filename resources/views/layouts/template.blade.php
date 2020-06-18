@@ -76,7 +76,7 @@
         </nav>
         <div class="container mt-2">
             <div class="row">
-                <div class="col-md-3 d-flex justify-content--around">
+                <div class="col-md-4 d-flex justify-content--around">
                     <form>
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">YEARS</label>
@@ -89,7 +89,7 @@
                             </select>
                         </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content--around">
+                <div class="col-md-4 d-flex justify-content--around">
                     <div class="form-group">
                             <label for="exampleFormControlSelect1">BLANDS</label>
                             <select class="form-control" id="exampleFormControlSelect1">
@@ -100,10 +100,11 @@
                             </select>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex justify-content--around">
+                <div class="col-md-4 d-flex justify-content--around">
                     <div class="form-group">
                 <label for="exampleFormControlInput1">FREEWORD</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="AirJodan">
+                    </div>
                 </div>
                     </form>
             </div>
@@ -115,9 +116,12 @@
                 </div>
             </div>
         </div>
+        <main>
+           @yield('content') 
+        </main>
         
     </body>
-      @yield('content')
+      
     <footer class="footer">&copy; 2020.Makojin</footer>
     
     
