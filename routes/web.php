@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::group(['prefix' => 'user','middleware'=>'auth'],function() {
     Route::get('mypage', 'user\ProfileController@add');

@@ -3,9 +3,9 @@
 @section('title', 'お問い合わせ')
 
 @section('content')
-<div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
+   
+        <div class="col-9">
             <form>
                 <div class="card">
                   <div class="card-header">お問い合わせ</div>
@@ -14,7 +14,6 @@
                             <label for="name" class="col-md-3 col-form-label text-md-right">Name</label>
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -38,7 +37,7 @@
                         <div class="form-group row">
                             <label for="ask" class="col-md-3 col-form-lavel text-md-right">お問い合わせ内容</label>
                                <div class="col-sm-6">
-                                <textarea rows="7" name="" class="form-control"></textarea>
+                                <textarea rows="6" name="" class="form-control"></textarea>
                                </div>
                         </div>
                         <div class="form-group-row">

@@ -12,9 +12,22 @@ class ProfileController extends Controller
     {
         return view('user.profile.mypage');
     }
-    public function create()
+    public function create(Request $request)
     {
         return view('user.profile.create');
+        $this->validate($request, Profile::$rules);
+
+      $news = new Profile;
+      $form = $request->all();
+
+      // フォームから送信されてきた_tokenを削除する
+      unset($form['_token']);
+      // フォームから送信されてきたimageを削除する
+      unset($form['image']);
+
+      // データベースに保存する
+      $profile->fill($form);
+      $profile->save();
     }
     public function edit()
     {

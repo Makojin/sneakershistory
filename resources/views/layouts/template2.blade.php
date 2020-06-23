@@ -74,46 +74,12 @@
                 </div>
             </div>
         </nav>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card p-3">
-                        <div class="sidebar_content">
-                            <div class="form-group">
-                            <label for="exampleFormControlSelect1">YEARS</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                             <option>2020年</option>
-                             <option>2019年</option>
-                             <option>2018年</option>
-                             <option>2017年</option>
-                             <option>2016年</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">BLANDS</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                             <option>NIKE</option>
-                             <option>ADIDAS</option>
-                             <option>CONVERSE</option>
-                             <option>VANS</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                <label for="exampleFormControlInput1">FREEWORD</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="AirJodan">
-        </div>
-        <div class="col text-center">
-                    <button type="button" class="btn btn-success">Search</button>
-                </div>
-                    </div>
-                </div> 
-            </div>  
-             @yield('content')
+             
         </div>
         </div>
         
         <main>
-           
+            @yield('content')
         </main>
         
     </body>
