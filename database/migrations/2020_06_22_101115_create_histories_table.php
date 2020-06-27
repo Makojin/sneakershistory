@@ -15,10 +15,11 @@ class CreateHistoryTable extends Migration
     {
         Schema::create('history', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name2');
+            $table->string('name');
             $table->string('bland');
             $table->string('date');
             $table->string('image_path')->nullable();
+            $table->string('comment');
             $table->timestamps();
         });
     }

@@ -17,7 +17,8 @@ class HistoryController extends Controller
     
     public function create()
     {  //投稿画面
-        return view('user/history/post');
+    
+    return view('user/history/post');
         
         $this->validate($request, History::$rules);
 

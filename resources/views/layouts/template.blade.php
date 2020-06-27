@@ -14,7 +14,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand"  href="#">スニヒス</a>
+                <a class="navbar-brand"  href="home">スニヒス</a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,10 +44,10 @@
                         @guest
                             {{-- 「ログイン」と「ユーザー登録」へのリンク --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{'Login'}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{'ユーザー登録'}}</a>
                             </li>
                         @else
                             {{--プロフィールとログアウトのドロップダウンメニュー--}}
@@ -107,9 +107,10 @@
                 </div>
                     </div>
                 </div> 
-            </div>  
-             @yield('content')
+            </div>
+            @yield('content')
         </div>
+        
         </div>
         
         <main>
@@ -118,7 +119,7 @@
         
     </body>
       
-    <footer class="footer">&copy; 2020.Makojin</footer>
+    <footer class="footer">© 2020.Makojin</footer>
     
     
     
